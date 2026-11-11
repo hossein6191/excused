@@ -1,0 +1,103 @@
+[keeper] starting 2026-11-11T19:18:41.433Z
+[19:18:47] SUPPLIER  0xf7ee66Ec2fda7bB0Ca61170479362F485Ad05f23
+           BUYER     0x20C210be6F3678FE85B2eFF61AAB305266AfdE00
+           STRANGER  0x30F4A694f641b922CBa711F1E75EA1267E7cc659
+           notices https://raw.githubusercontent.com/hossein6191/excused/2912553ac20a10211fb383771b4e82ab8281490a/notices/
+
+[19:18:47] ---- phase A: deploy, five agreements signed, four accepted, two closed before they are due
+      [19:19:29] SUPPLIER deploy excused.py  0x55729e952b33a06562337f307942965fc1489c88dc8365c43829519463f47c0f  3 agree, 0 disagree, 2 idle  SUCCESS  0x615cCD1b66E98bF01D6a25038EA90a597c204fD0
+      Excused at 0x615cCD1b66E98bF01D6a25038EA90a597c204fD0
+      [19:20:08] SUPPLIER sign(da7bB0Ca61170479362F485Ad05f23,  through the Port of Saltmarsh, 1794426569, s, between 1 and 20 March 2027, 383771b4e82ab8281490a/notices/, 3600) +1 GEN  0xc2e4f98abd5876ecd6d03fbe7e6b7fe80061f42d7bd48164b01e9884e1c3a8a8  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  SUPPLIER names itself as the buyer: refused, and the 1 GEN comes back in the same transaction  - 3 agree, 0 disagree, 2 idle  the buyer is somebody other than the supplier
+      [19:20:48] SUPPLIER sign(3678FE85B2eFF61AAB305266AfdE00,  through the Port of Saltmarsh, 1794426569, s, between 1 and 20 March 2027, 383771b4e82ab8281490a/notices/, 3600) +0.05 GEN  0xfc7bdbd3f312569d6f788e7baf895412665b9a79702b8287d541731be5df6305  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  SUPPLIER sends a 0.05 GEN bond: refused, the least is 0.1 GEN, and the 0.05 GEN comes back  - 3 agree, 0 disagree, 2 idle  the bond is the value sent, 100000000000000000 to 100000000000000000000 atto (0.1 to 100 GEN); this call sent 50000000000000000
+      [19:21:29] SUPPLIER sign(3678FE85B2eFF61AAB305266AfdE00,  through the Port of Saltmarsh, 1794426569, s, between 1 and 20 March 2027, 383771b4e82ab8281490a/notices/, 3600) +1 GEN  0x644f569bdf302472850ebe19b799bec5620cc44276754d2541c823baf8acedd5  4 agree, 0 disagree, 1 idle  SUCCESS
+PASS  SUPPLIER signs A1 with BUYER and locks a 1 GEN bond; due 1794426569, excuses until 3600 s after  - 4 agree, 0 disagree, 1 idle  {"ok": true, "agreement": "A1", "supplier": "0xf7ee66ec2fda7bb0ca61170479362f485ad05f23", "buyer": "0x20c210be6f3678fe85
+      [19:22:15] SUPPLIER sign(3678FE85B2eFF61AAB305266AfdE00,  through the Port of Saltmarsh, 1794426691, s, between 1 and 20 March 2027, 383771b4e82ab8281490a/notices/, 3600) +1 GEN  0xf475cd2eee3aeef8d764572fd928c96f6f45fdd7f347c3f71ce57f3c93bead3c  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  SUPPLIER signs A2 with BUYER and locks a 1 GEN bond; due 1794426691, excuses until 3600 s after  - 3 agree, 0 disagree, 2 idle  {"ok": true, "agreement": "A2", "supplier": "0xf7ee66ec2fda7bb0ca61170479362f485ad05f23", "buyer": "0x20c210be6f3678fe85
+      [19:22:56] SUPPLIER sign(3678FE85B2eFF61AAB305266AfdE00,  through the Port of Saltmarsh, 1794426736, s, between 1 and 20 March 2027, 383771b4e82ab8281490a/notices/, 1200) +0.5 GEN  0xf4f2bee46e09a8f9e2a838bff5f46650e0aee1753b941bee82e70fbb9341cd05  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  SUPPLIER signs A3 with BUYER and locks a 0.5 GEN bond; due 1794426736, excuses until 1200 s after  - 3 agree, 0 disagree, 2 idle  {"ok": true, "agreement": "A3", "supplier": "0xf7ee66ec2fda7bb0ca61170479362f485ad05f23", "buyer": "0x20c210be6f3678fe85
+      [19:23:58] SUPPLIER sign(3678FE85B2eFF61AAB305266AfdE00,  through the Port of Saltmarsh, 1794432176, s, between 1 and 20 March 2027, 383771b4e82ab8281490a/notices/, 600) +0.5 GEN  0x9cd72b94501e30e632c5efd0ae0436ecb9e986577bd0084efab4bdd2d1079d59  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  SUPPLIER signs A4 with BUYER and locks a 0.5 GEN bond; due 1794432176, excuses until 600 s after  - 3 agree, 0 disagree, 2 idle  {"ok": true, "agreement": "A4", "supplier": "0xf7ee66ec2fda7bb0ca61170479362f485ad05f23", "buyer": "0x20c210be6f3678fe85
+      [19:24:34] SUPPLIER sign(3678FE85B2eFF61AAB305266AfdE00,  through the Port of Saltmarsh, 1794432238, s, between 1 and 20 March 2027, 383771b4e82ab8281490a/notices/, 600) +0.2 GEN  0xd729ecbfcd67c340c847f1a767cb9e8064267b471dd5b22d752fbfb9907b53a2  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  SUPPLIER signs A5 with BUYER and locks a 0.2 GEN bond; due 1794432238, excuses until 600 s after  - 3 agree, 0 disagree, 2 idle  {"ok": true, "agreement": "A5", "supplier": "0xf7ee66ec2fda7bb0ca61170479362f485ad05f23", "buyer": "0x20c210be6f3678fe85
+      [19:25:41] STRANGER accept(A1)  0xb5ea34963f81be992666ac8ceaa78271dfbb15a303de1c1ac1dbfca71753d15b  3 agree, 0 disagree, 2 idle  ERROR
+PASS  STRANGER may not accept A1  - 3 agree, 0 disagree, 2 idle  [EXPECTED] only the buyer 0x20c210be6f3678fe85b2eff61aab305266afde00 may accept A1
+      [19:26:20] BUYER accept(A1)  0x98d074f121977dab7f610a8b8050e6bb0c0629842d70ae1a53444ab053c467a3  4 agree, 0 disagree, 1 idle  SUCCESS
+PASS  BUYER accepts A1  - 4 agree, 0 disagree, 1 idle  {"ok": true, "agreement": "A1", "status": "active", "accepted_at": 1794425143, "due": 1794426569, "c
+      [19:26:57] BUYER accept(A2)  0xf9bf5fe53419df8806b6a94e7cb389255a8779764fa12d2defb5e77aecc2313e  5 agree, 0 disagree, 0 idle  SUCCESS
+PASS  BUYER accepts A2  - 5 agree, 0 disagree, 0 idle  {"ok": true, "agreement": "A2", "status": "active", "accepted_at": 1794425181, "due": 1794426691, "c
+      [19:27:36] BUYER accept(A3)  0xc5df691974b704fd2f1ecc4982776f907f25cfe5fec7486cb321791c252d2816  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  BUYER accepts A3  - 3 agree, 0 disagree, 2 idle  {"ok": true, "agreement": "A3", "status": "active", "accepted_at": 1794425219, "due": 1794426736, "c
+      [19:28:19] BUYER accept(A4)  0x6d642aa127e20a0da05579d68333a1b4f71dc7d6e0315f1de86d7ddf87dddd63  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  BUYER accepts A4  - 3 agree, 0 disagree, 2 idle  {"ok": true, "agreement": "A4", "status": "active", "accepted_at": 1794425258, "due": 1794432176, "c
+      [19:29:02] SUPPLIER withdraw_bond(A5)  0xb5ead03abb43e9485bae2b109415fe4be318ea2375edb855c811d37015711d71  4 agree, 0 disagree, 1 idle  SUCCESS
+PASS  SUPPLIER takes back the 0.2 GEN bond of A5, which BUYER never accepted  - 4 agree, 0 disagree, 1 idle  {"ok": true, "agreement": "A5", "status": "withdrawn", "paid": "200000000000000000", "to": "0xf7ee66
+      [19:29:41] SUPPLIER mark_delivered(A4)  0xf8a4b3d581c78911b5f4a516dbda52b00b0df6b265c57a230ced6025aa2084b6  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  SUPPLIER states delivery of A4 before it is due: the 0.5 GEN bond back, closed on time  - 3 agree, 0 disagree, 2 idle  {"ok": true, "agreement": "A4", "status": "on_time", "paid": "500000000000000000", "to": "0xf7ee66ec
+      [19:30:24] SUPPLIER deposit() +0.05 GEN  0x646034d6be08d11d8a82e5dae11f0f774077aee0810b53fdb676d074f5898cda  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  SUPPLIER deposits 0.05 GEN of excuse credit  - 3 agree, 0 disagree, 2 idle  {"ok": true, "address": "0xf7ee66ec2fda7bb0ca61170479362f485ad05f23", "added": "50000000000000000", 
+      [19:31:02] SUPPLIER excuse(A1, notices/port-closed-storm.html)  0xaa823d7e34e222764084a97d608f1032ed4fdb4481343a0fc757674446bd8749  3 agree, 0 disagree, 2 idle  ERROR
+PASS  SUPPLIER may not cite a notice for A1 before it is late: refused before anything is fetched  - 3 agree, 0 disagree, 2 idle  [EXPECTED] A1 is due at 1794426569 and is not late; delivery is stated with mark_delivered before then
+      [19:31:40] BUYER collect(A1)  0xfd8d3ee4a433dcd844d41adf3057e4bb9c7bc56c72b91db5cb6753c627f42d39  3 agree, 0 disagree, 2 idle  ERROR
+PASS  BUYER may not collect A1 before it is due  - 3 agree, 0 disagree, 2 idle  [EXPECTED] A1 is not due until 1794426569; nothing is owed before then
+
+[19:31:40] ---- phase B: late, and the notices read by the validators on the live web
+      [19:53:18] SUPPLIER mark_delivered(A3)  0xe63066e4448c85d965466bd6361e59044da372824d6209eb0a71cbf06b6e985a  3 agree, 0 disagree, 2 idle  ERROR
+PASS  SUPPLIER may not state delivery of A3 after its due time  - 3 agree, 0 disagree, 2 idle  [EXPECTED] A3 was due at 1794426736; delivery after the due time is late, and only a notice the clause covers excuses it
+      [19:54:07] SUPPLIER excuse(A1, 83771b4e82ab8281490a/README.md)  0x6c70220d1334da8034ec748bd462aa7388e16e2f80ca7b37aadda0f3c1df20bb  3 agree, 0 disagree, 2 idle  ERROR
+PASS  SUPPLIER cites the repository's README, outside the prefix both parties named: refused before any fetch, no fee  - 3 agree, 0 disagree, 2 idle  [EXPECTED] the page is not below https://raw.githubusercontent.com/hossein6191/excused/2912553ac20a10211fb383771b4e82ab8281490a/notices/, the only source both p
+      [19:54:47] STRANGER excuse(A1, notices/port-closed-storm.html)  0x259e8a3c0bef89fca727c6865fac2fba6e96953325d97d242cd6ee21113e40a0  3 agree, 0 disagree, 2 idle  ERROR
+PASS  STRANGER may not cite a notice for A1  - 3 agree, 0 disagree, 2 idle  [EXPECTED] only the supplier of A1 may cite a notice to excuse its lateness
+      [19:55:54] SUPPLIER excuse(A1, notices/port-closed-storm.html)  0xa5db1578b1088d6c4ae166939d62e680e1bd37b58ac363f249f58a5de07f4bf8  3 agree, 1 disagree, 1 idle  SUCCESS
+PASS  every validator reads "port-closed-storm.html" (closed 51 hours by order, for storm): excused, A1's 1 GEN back to SUPPLIER, the fee kept  - 3 agree, 1 disagree, 1 idle  {"excuse":"X1","finding":"excused","fp":"58d60ffd8c6322a7","credit":"50000000000000000"}
+      .. the stored fingerprint 58d60ffd8c6322a7; this checkout's file collapsed gives 58d60ffd8c6322a7
+      [19:56:45] SUPPLIER excuse(A2, 490a/notices/crane-strike.html)  0x0dcd7e9ab55eb7f7507f9bdff9fc8b38e60d3efd9f3f493b4f9ed7d5249ecb55  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  every validator reads "crane-strike.html" (a dockworkers' strike, the port open): not_excused, A2's 1 GEN and the fee to BUYER  - 3 agree, 0 disagree, 2 idle  {"excuse":"X2","finding":"not_excused","fp":"0315dd3a990fbfc0"}
+      .. the stored fingerprint 0315dd3a990fbfc0; this checkout's file collapsed gives 0315dd3a990fbfc0
+      [19:57:34] SUPPLIER excuse(A3, notices/port-closed-short.html)  0x405a7f8dea1a8a2fb7fb05b7c6366bcaaf3f572092d2f2279a262bbb8650fc60  3 agree, 0 disagree, 2 idle  SUCCESS
+PASS  every validator reads "port-closed-short.html" (closed 6 hours, for fog): not_excused, and the fee goes to BUYER  - 3 agree, 0 disagree, 2 idle  {"excuse":"X3","finding":"not_excused","fp":"d10d40cb38c91258","status":"penalised"}
+
+[19:57:34] ---- phase C: the code read back, the views, the credit, the balances
+PASS  the code deployed at 0x615cCD1b66E98bF01D6a25038EA90a597c204fD0 is byte for byte contracts/excused.py  - 61552 bytes, sha256 4451a9250c1476fa02bf844cd0aca5cf7476089291a305847accd8dc5989f03c
+PASS  agreement(A1) reads excused by X1, the bond back to SUPPLIER  - {"status":"excused","closed_by":"X1"}
+PASS  agreement(A2) reads penalised, the bond and one fee to BUYER  - {"status":"penalised","to_buyer":"1000000000000000000"}
+PASS  excuses_of(A1) lists the one excuse with its page, finding, fingerprint and where the fee went  - [["X1","excused","supplier"]]
+PASS  agreements_of(BUYER) finds all five agreements as the buyer, with the address in any letter case  - {"total":5}
+PASS  stats(): five agreements, one withdrawn, one on time, one excused, the rest penalised or collected, two refused payments returned  - {"agreements":5,"accepted":4,"withdrawn":1,"on_time":1,"excused":1,"penalised":2,"collected":0,"excuses":3,"unclear":0,"repeats":0,"held":"0","bonds":"3200000000000000000","to_suppliers":"1700000000000000000","to_buyers":"1500000000000000000","credit":"30000000000000000","deposited":"50000000000000000","credit_out":"0","fees":"20000000000000000","refused_payments":2,"returned":"1050000000000000000"}
+PASS  rules() publishes the questions word for word, the comparison, the combine table and the limits
+      [19:58:33] SUPPLIER withdraw()  0x85dd2634076b7ce3d53affe983ea53a279519317567f2ddbfa71be9113a572da  4 agree, 0 disagree, 1 idle  SUCCESS
+PASS  SUPPLIER takes its 0.03 GEN of credit back  - 4 agree, 0 disagree, 1 idle  {"ok": true, "address": "0xf7ee66ec2fda7bb0ca61170479362f485ad05f23", "withdrawn": "3000000000000000
+PASS  the contract's own balance is zero  - 0
+PASS  every account ends where the money says: BUYER up 1.52 GEN, SUPPLIER down 1.52 GEN, STRANGER unchanged  - SUPPLIER -1.52  BUYER 1.52  STRANGER 0
+
+33 passed, 0 failed
+Excused: 0x615cCD1b66E98bF01D6a25038EA90a597c204fD0  https://explorer-studio.genlayer.com/address/0x615cCD1b66E98bF01D6a25038EA90a597c204fD0
+transactions: 25 in 25 steps; sent a second time: none
+deploy              0x55729e952b33a06562337f307942965fc1489c88dc8365c43829519463f47c0f 3 agree, 0 disagree, 2 idle SUCCESS
+signSelf            0xc2e4f98abd5876ecd6d03fbe7e6b7fe80061f42d7bd48164b01e9884e1c3a8a8 3 agree, 0 disagree, 2 idle SUCCESS
+signSmall           0xfc7bdbd3f312569d6f788e7baf895412665b9a79702b8287d541731be5df6305 3 agree, 0 disagree, 2 idle SUCCESS
+signA1              0x644f569bdf302472850ebe19b799bec5620cc44276754d2541c823baf8acedd5 4 agree, 0 disagree, 1 idle SUCCESS
+signA2              0xf475cd2eee3aeef8d764572fd928c96f6f45fdd7f347c3f71ce57f3c93bead3c 3 agree, 0 disagree, 2 idle SUCCESS
+signA3              0xf4f2bee46e09a8f9e2a838bff5f46650e0aee1753b941bee82e70fbb9341cd05 3 agree, 0 disagree, 2 idle SUCCESS
+signA4              0x9cd72b94501e30e632c5efd0ae0436ecb9e986577bd0084efab4bdd2d1079d59 3 agree, 0 disagree, 2 idle SUCCESS
+signA5              0xd729ecbfcd67c340c847f1a767cb9e8064267b471dd5b22d752fbfb9907b53a2 3 agree, 0 disagree, 2 idle SUCCESS
+acceptStranger      0xb5ea34963f81be992666ac8ceaa78271dfbb15a303de1c1ac1dbfca71753d15b 3 agree, 0 disagree, 2 idle ERROR
+acceptA1            0x98d074f121977dab7f610a8b8050e6bb0c0629842d70ae1a53444ab053c467a3 4 agree, 0 disagree, 1 idle SUCCESS
+acceptA2            0xf9bf5fe53419df8806b6a94e7cb389255a8779764fa12d2defb5e77aecc2313e 5 agree, 0 disagree, 0 idle SUCCESS
+acceptA3            0xc5df691974b704fd2f1ecc4982776f907f25cfe5fec7486cb321791c252d2816 3 agree, 0 disagree, 2 idle SUCCESS
+acceptA4            0x6d642aa127e20a0da05579d68333a1b4f71dc7d6e0315f1de86d7ddf87dddd63 3 agree, 0 disagree, 2 idle SUCCESS
+withdrawA5          0xb5ead03abb43e9485bae2b109415fe4be318ea2375edb855c811d37015711d71 4 agree, 0 disagree, 1 idle SUCCESS
+deliverA4           0xf8a4b3d581c78911b5f4a516dbda52b00b0df6b265c57a230ced6025aa2084b6 3 agree, 0 disagree, 2 idle SUCCESS
+deposit             0x646034d6be08d11d8a82e5dae11f0f774077aee0810b53fdb676d074f5898cda 3 agree, 0 disagree, 2 idle SUCCESS
+excuseEarly         0xaa823d7e34e222764084a97d608f1032ed4fdb4481343a0fc757674446bd8749 3 agree, 0 disagree, 2 idle ERROR
+collectEarly        0xfd8d3ee4a433dcd844d41adf3057e4bb9c7bc56c72b91db5cb6753c627f42d39 3 agree, 0 disagree, 2 idle ERROR
+deliverLateA3       0xe63066e4448c85d965466bd6361e59044da372824d6209eb0a71cbf06b6e985a 3 agree, 0 disagree, 2 idle ERROR
+excuseOutside       0x6c70220d1334da8034ec748bd462aa7388e16e2f80ca7b37aadda0f3c1df20bb 3 agree, 0 disagree, 2 idle ERROR
+excuseStranger      0x259e8a3c0bef89fca727c6865fac2fba6e96953325d97d242cd6ee21113e40a0 3 agree, 0 disagree, 2 idle ERROR
+excuseA1            0xa5db1578b1088d6c4ae166939d62e680e1bd37b58ac363f249f58a5de07f4bf8 3 agree, 1 disagree, 1 idle SUCCESS
+excuseA2            0x0dcd7e9ab55eb7f7507f9bdff9fc8b38e60d3efd9f3f493b4f9ed7d5249ecb55 3 agree, 0 disagree, 2 idle SUCCESS
+excuseA3            0x405a7f8dea1a8a2fb7fb05b7c6366bcaaf3f572092d2f2279a262bbb8650fc60 3 agree, 0 disagree, 2 idle SUCCESS
+withdrawCredit      0x85dd2634076b7ce3d53affe983ea53a279519317567f2ddbfa71be9113a572da 4 agree, 0 disagree, 1 idle SUCCESS
+
+exit 0

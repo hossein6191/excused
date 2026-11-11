@@ -265,7 +265,40 @@ line.
 
 ## Evidence
 
-The on-chain run is recorded here once it has run.
+Run on 12 November 2026 on GenLayer Studio (chain 61999) by `tests/on_chain/smoke.mjs`, from generated accounts funded from the
+Studio faucet, none of them anybody's wallet: **SUPPLIER** signs agreements and cites notices, **BUYER** accepts and collects, **STRANGER** tries what it may not; the notices were the files in `notices/` pinned to commit 2912553ac20a10211fb383771b4e82ab8281490a. **33 passed, 0 failed**; transactions: 25 in 25 steps; sent a second time: none.
+The whole log is `tests/on_chain/smoke-run.log`. Every validator read the Saltmarsh Harbour Authority notices against the clause (a storm or flood closure of at least 24 hours between 1 and 20 March 2027): the 51-hour storm closure read excused and the supplier's 1 GEN bond came back; the dockworkers' strike read not excused and the bond went to the buyer; the 6-hour fog closure read not excused. An agreement delivered on time returned its bond.
+
+- `excused.py` deployed at [`0x615cCD1b66E98bF01D6a25038EA90a597c204fD0`](https://explorer-studio.genlayer.com/address/0x615cCD1b66E98bF01D6a25038EA90a597c204fD0)
+
+- the code deployed at 0x615cCD1b66E98bF01D6a25038EA90a597c204fD0 is byte for byte contracts/excused.py: 61552 bytes, sha256 4451a9250c1476fa02bf844cd0aca5cf7476089291a305847accd8dc5989f03c
+
+| step | by | transactions | votes |
+|---|---|---|---|
+| SUPPLIER names itself as the buyer: refused, and the 1 GEN comes back in the same transaction | SUPPLIER | [0x55729e95…](https://explorer-studio.genlayer.com/tx/0x55729e952b33a06562337f307942965fc1489c88dc8365c43829519463f47c0f), [0xc2e4f98a…](https://explorer-studio.genlayer.com/tx/0xc2e4f98abd5876ecd6d03fbe7e6b7fe80061f42d7bd48164b01e9884e1c3a8a8) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER sends a 0.05 GEN bond: refused, the least is 0.1 GEN, and the 0.05 GEN comes back | SUPPLIER | [0xfc7bdbd3…](https://explorer-studio.genlayer.com/tx/0xfc7bdbd3f312569d6f788e7baf895412665b9a79702b8287d541731be5df6305) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER signs A1 with BUYER and locks a 1 GEN bond; due 1794426569, excuses until 3600 s after | SUPPLIER | [0x644f569b…](https://explorer-studio.genlayer.com/tx/0x644f569bdf302472850ebe19b799bec5620cc44276754d2541c823baf8acedd5) | 4 agree, 0 disagree, 1 idle |
+| SUPPLIER signs A2 with BUYER and locks a 1 GEN bond; due 1794426691, excuses until 3600 s after | SUPPLIER | [0xf475cd2e…](https://explorer-studio.genlayer.com/tx/0xf475cd2eee3aeef8d764572fd928c96f6f45fdd7f347c3f71ce57f3c93bead3c) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER signs A3 with BUYER and locks a 0.5 GEN bond; due 1794426736, excuses until 1200 s after | SUPPLIER | [0xf4f2bee4…](https://explorer-studio.genlayer.com/tx/0xf4f2bee46e09a8f9e2a838bff5f46650e0aee1753b941bee82e70fbb9341cd05) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER signs A4 with BUYER and locks a 0.5 GEN bond; due 1794432176, excuses until 600 s after | SUPPLIER | [0x9cd72b94…](https://explorer-studio.genlayer.com/tx/0x9cd72b94501e30e632c5efd0ae0436ecb9e986577bd0084efab4bdd2d1079d59) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER signs A5 with BUYER and locks a 0.2 GEN bond; due 1794432238, excuses until 600 s after | SUPPLIER | [0xd729ecbf…](https://explorer-studio.genlayer.com/tx/0xd729ecbfcd67c340c847f1a767cb9e8064267b471dd5b22d752fbfb9907b53a2) | 3 agree, 0 disagree, 2 idle |
+| STRANGER may not accept A1 | STRANGER | [0xb5ea3496…](https://explorer-studio.genlayer.com/tx/0xb5ea34963f81be992666ac8ceaa78271dfbb15a303de1c1ac1dbfca71753d15b) | 3 agree, 0 disagree, 2 idle |
+| BUYER accepts A1 | BUYER | [0x98d074f1…](https://explorer-studio.genlayer.com/tx/0x98d074f121977dab7f610a8b8050e6bb0c0629842d70ae1a53444ab053c467a3) | 4 agree, 0 disagree, 1 idle |
+| BUYER accepts A2 | BUYER | [0xf9bf5fe5…](https://explorer-studio.genlayer.com/tx/0xf9bf5fe53419df8806b6a94e7cb389255a8779764fa12d2defb5e77aecc2313e) | 5 agree, 0 disagree, 0 idle |
+| BUYER accepts A3 | BUYER | [0xc5df6919…](https://explorer-studio.genlayer.com/tx/0xc5df691974b704fd2f1ecc4982776f907f25cfe5fec7486cb321791c252d2816) | 3 agree, 0 disagree, 2 idle |
+| BUYER accepts A4 | BUYER | [0x6d642aa1…](https://explorer-studio.genlayer.com/tx/0x6d642aa127e20a0da05579d68333a1b4f71dc7d6e0315f1de86d7ddf87dddd63) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER takes back the 0.2 GEN bond of A5, which BUYER never accepted | SUPPLIER | [0xb5ead03a…](https://explorer-studio.genlayer.com/tx/0xb5ead03abb43e9485bae2b109415fe4be318ea2375edb855c811d37015711d71) | 4 agree, 0 disagree, 1 idle |
+| SUPPLIER states delivery of A4 before it is due: the 0.5 GEN bond back, closed on time | SUPPLIER | [0xf8a4b3d5…](https://explorer-studio.genlayer.com/tx/0xf8a4b3d581c78911b5f4a516dbda52b00b0df6b265c57a230ced6025aa2084b6) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER deposits 0.05 GEN of excuse credit | SUPPLIER | [0x646034d6…](https://explorer-studio.genlayer.com/tx/0x646034d6be08d11d8a82e5dae11f0f774077aee0810b53fdb676d074f5898cda) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER may not cite a notice for A1 before it is late: refused before anything is fetched | SUPPLIER | [0xaa823d7e…](https://explorer-studio.genlayer.com/tx/0xaa823d7e34e222764084a97d608f1032ed4fdb4481343a0fc757674446bd8749) | 3 agree, 0 disagree, 2 idle |
+| BUYER may not collect A1 before it is due | BUYER | [0xfd8d3ee4…](https://explorer-studio.genlayer.com/tx/0xfd8d3ee4a433dcd844d41adf3057e4bb9c7bc56c72b91db5cb6753c627f42d39) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER may not state delivery of A3 after its due time | SUPPLIER | [0xe63066e4…](https://explorer-studio.genlayer.com/tx/0xe63066e4448c85d965466bd6361e59044da372824d6209eb0a71cbf06b6e985a) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER cites the repository's README, outside the prefix both parties named: refused before any fetch, no fee | SUPPLIER | [0x6c70220d…](https://explorer-studio.genlayer.com/tx/0x6c70220d1334da8034ec748bd462aa7388e16e2f80ca7b37aadda0f3c1df20bb) | 3 agree, 0 disagree, 2 idle |
+| STRANGER may not cite a notice for A1 | STRANGER | [0x259e8a3c…](https://explorer-studio.genlayer.com/tx/0x259e8a3c0bef89fca727c6865fac2fba6e96953325d97d242cd6ee21113e40a0) | 3 agree, 0 disagree, 2 idle |
+| every validator reads "port-closed-storm.html" (closed 51 hours by order, for storm): excused, A1's 1 GEN back to SUPPLIER, the fee kept | SUPPLIER | [0xa5db1578…](https://explorer-studio.genlayer.com/tx/0xa5db1578b1088d6c4ae166939d62e680e1bd37b58ac363f249f58a5de07f4bf8) | 3 agree, 1 disagree, 1 idle |
+| every validator reads "crane-strike.html" (a dockworkers' strike, the port open): not_excused, A2's 1 GEN and the fee to BUYER | SUPPLIER | [0x0dcd7e9a…](https://explorer-studio.genlayer.com/tx/0x0dcd7e9ab55eb7f7507f9bdff9fc8b38e60d3efd9f3f493b4f9ed7d5249ecb55) | 3 agree, 0 disagree, 2 idle |
+| every validator reads "port-closed-short.html" (closed 6 hours, for fog): not_excused, and the fee goes to BUYER | SUPPLIER | [0x405a7f8d…](https://explorer-studio.genlayer.com/tx/0x405a7f8dea1a8a2fb7fb05b7c6366bcaaf3f572092d2f2279a262bbb8650fc60) | 3 agree, 0 disagree, 2 idle |
+| SUPPLIER takes its 0.03 GEN of credit back | SUPPLIER | [0x85dd2634…](https://explorer-studio.genlayer.com/tx/0x85dd2634076b7ce3d53affe983ea53a279519317567f2ddbfa71be9113a572da) | 4 agree, 0 disagree, 1 idle |
 
 ## Licence
 
